@@ -1,0 +1,2630 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#1c1b1b", "inverse-surface": "#e5e2e1", "on-primary-fixed-variant": "#604100", "on-secondary-fixed-variant": "#623376", "secondary": "#ebb2ff", "on-tertiary": "#32302a", "primary-fixed": "#ffdead", "primary": "#f4bd61", "error-container": "#93000a", "on-secondary": "#491b5e", "surface-container-lowest": "#0e0e0e", "surface-tint": "#f4bd61", "error": "#ffb4ab", "surface-dim": "#131313", "surface-container-high": "#2a2a2a", "on-tertiary-container": "#383630", "on-background": "#e5e2e1", "on-secondary-fixed": "#320047", "secondary-fixed-dim": "#ebb2ff", "surface-variant": "#353534", "secondary-fixed": "#f8d8ff", "on-tertiary-fixed": "#1d1b16", "outline-variant": "#4f4537", "on-primary-fixed": "#281900", "on-secondary-container": "#dca4f0", "on-surface-variant": "#d3c4b2", "on-error": "#690005", "on-error-container": "#ffdad6", "secondary-container": "#653578", "tertiary": "#cbc6bd", "inverse-on-surface": "#313030", "tertiary-fixed-dim": "#cbc6bd", "surface-container": "#201f1f", "on-primary": "#432c00", "tertiary-fixed": "#e7e2d9", "primary-container": "#c8963e", "surface-container-highest": "#353534", "tertiary-container": "#a39e96", "outline": "#9c8f7e", "surface": "#131313", "on-primary-container": "#4a3100", "primary-fixed-dim": "#f4bd61", "on-surface": "#e5e2e1", "inverse-primary": "#7e5700", "on-tertiary-fixed-variant": "#494640", "surface-bright": "#3a3939", "background": "#131313" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter-desktop": "2.5rem", "margin-tablet": "2.5rem", "space-lg": "2rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "space-xl": "3.5rem", "margin-desktop": "5rem", "margin": "1.25rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "display-hero": [ "EB Garamond" ], "headline-lg": [ "EB Garamond" ], "label-md": [ "Montserrat" ], "body-lg": [ "EB Garamond" ], "display-hero-mobile": [ "EB Garamond" ], "headline-sm": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-sm": [ "Montserrat" ], "headline-lg-mobile": [ "EB Garamond" ], "label-ritual": [ "Montserrat" ], "body-sm": [ "EB Garamond" ], "body-md": [ "EB Garamond" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "0.18em", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "0.12em", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.16em", "fontWeight": "500" } ], "body-lg": [ "19px", { "lineHeight": "30px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "0.14em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "0.08em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.2em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "0.1em", "fontWeight": "400" } ], "label-ritual": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.24em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-md": [ "16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400" } ] } } } }</script><style id="theme-and-lang-styles">
+  html:not(.dark) body {
+    background-color: #F6F1EA !important;
+    color: #1c1917 !important;
+  }
+  html:not(.dark) .bg-background {
+    background-color: #F6F1EA !important;
+  }
+  html:not(.dark) .bg-surface {
+    background-color: #FAF6F0 !important;
+  }
+  html:not(.dark) .bg-surface-dim {
+    background-color: #EFE8DC !important;
+  }
+  html:not(.dark) .bg-surface-container-lowest {
+    background-color: #E9E1D3 !important;
+  }
+  html:not(.dark) .bg-surface-container-low {
+    background-color: #F2ECE0 !important;
+  }
+  html:not(.dark) .bg-surface-container {
+    background-color: #ECE4D7 !important;
+  }
+  html:not(.dark) .bg-surface-container-high {
+    background-color: #E2D7C7 !important;
+  }
+  html:not(.dark) .text-on-surface {
+    color: #1c1917 !important;
+  }
+  html:not(.dark) .text-on-surface-variant {
+    color: #44403c !important;
+  }
+  html:not(.dark) .text-outline {
+    color: #78716c !important;
+  }
+  html:not(.dark) .border-outline-variant\/30,
+  html:not(.dark) .border-outline-variant\/20,
+  html:not(.dark) .border-outline-variant\/50 {
+    border-color: rgba(180, 140, 80, 0.25) !important;
+  }
+  html:not(.dark) header {
+    background-color: rgba(246, 241, 234, 0.92) !important;
+  }
+  html:not(.dark) #sacredCart {
+    background-color: #FAF6F0 !important;
+  }
+  html:not(.dark) input {
+    background-color: #F2ECE0 !important;
+    color: #1c1917 !important;
+    border: 1px solid #D6C7B2 !important;
+  }
+  html:not(.dark) input::placeholder {
+    color: #8c827a !important;
+  }
+  html:not(.dark) .faq-item {
+    background-color: #F2ECE0 !important;
+  }
+  .lang-btn.active-lang {
+    color: #f4bd61 !important;
+    font-weight: 700 !important;
+  }
+  .lang-btn:not(.active-lang) {
+    color: #a8a29e !important;
+    font-weight: 500 !important;
+  }
+</style></head><body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="bg-surface-container-lowest text-on-surface-variant border-b border-outline-variant/30 py-1.5 px-margin"><div class="max-w-7xl mx-auto flex items-center justify-between font-label-ritual text-label-ritual uppercase tracking-widest"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">auto_awesome</span><span id="topBarAnnouncement" class="">Envío gratis desde $200.000 · Muestras de obsequio en cada orden</span></span><div class="flex items-center gap-4 text-label-sm font-label-sm"><button type="button" id="langBtnES" onclick="setLanguage('es')" class="lang-btn active-lang cursor-pointer transition-colors">ES</button><span class="text-outline-variant select-none">|</span><button type="button" id="langBtnEN" onclick="setLanguage('en')" class="lang-btn cursor-pointer transition-colors">EN</button></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><a class="flex items-center gap-3 group" data-path="home" href="#"><span class="material-symbols-outlined text-primary text-[32px] transition-transform duration-500 group-hover:scale-105">military_tech</span><div class="flex flex-col"><span class="font-['Cinzel',serif] tracking-[0.28em] text-[20px] font-bold text-primary group-hover:text-primary-fixed transition-colors uppercase">NOX AUREA</span><span class="font-label-ritual text-[9px] tracking-[0.35em] text-on-surface-variant uppercase">Sanctuary of Scent</span></div></a><nav class="hidden lg:flex items-center gap-8 font-label-ritual text-label-ritual uppercase" data-active-classes="text-primary font-bold"><a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="colecciones" href="#">Colecciones</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="decants" href="#">Decants</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="perfumes" href="#">Perfumes</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="nosotros" href="#">Nosotros</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-5"><button id="themeToggleBtn" onclick="toggleTheme()" aria-label="Alternar Tema Nocturno y Marfil" class="text-on-surface-variant hover:text-primary transition-colors p-1.5 flex items-center justify-center cursor-pointer" type="button"><span id="themeToggleIcon" class="material-symbols-outlined text-[20px]">light_mode</span></button><a aria-label="Sacred Cart" class="relative text-on-surface-variant hover:text-primary transition-colors p-1.5 flex items-center justify-center" data-path="sacred-cart" href="#"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-1 ring-primary-container"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[116px] bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface select-none">
+<!-- HERO CEREMONIAL -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden -mt-[116px] pt-[116px]">
+<!-- Atmospheric Underglows & Sacred Mist -->
+<div class="absolute inset-0 bg-surface-container-lowest"></div>
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute bottom-10 right-10 w-[600px] h-[400px] bg-secondary-container/20 rounded-full blur-[150px] pointer-events-none"></div>
+<!-- Sacred Ambient Vector Geometry -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+<svg class="w-[780px] h-[780px] animate-[spin_120s_linear_infinite]" fill="none" viewBox="0 0 500 500">
+<circle class="text-primary" cx="250" cy="250" r="240" stroke="currentColor" stroke-dasharray="4 8" stroke-width="0.75"></circle>
+<circle class="text-primary" cx="250" cy="250" r="190" stroke="currentColor" stroke-width="0.5"></circle>
+<circle class="text-primary" cx="250" cy="250" r="120" stroke="currentColor" stroke-dasharray="1 6" stroke-width="0.75"></circle>
+<polygon class="text-primary" points="250,60 415,345 85,345" stroke="currentColor" stroke-width="0.5"></polygon>
+<polygon class="text-primary" points="250,440 85,155 415,155" stroke="currentColor" stroke-width="0.5"></polygon>
+</svg>
+</div>
+<!-- Central Monumental Pillar -->
+<div class="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-3 px-5 py-1.5 rounded-full bg-surface-container/70 backdrop-blur-md mb-8 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-ritual text-label-ritual text-primary uppercase tracking-[0.3em]">Sanctuarium Olfactorium &amp; Decants Rares</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
+</div>
+<h1 class="font-display-hero text-display-hero uppercase text-on-surface max-w-4xl tracking-[0.16em] mb-6">
+        Lo que dejas en el aire, <br>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed to-secondary italic font-light font-body-lg text-headline-lg lowercase tracking-normal">te consagra para la eternidad.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+        Custodiaremos para ti extractos monumentales y decants milimétricos en frascos de cristal oscuro. Descubre tu firma olfativa a través del misticismo nocturno.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-5 justify-center w-full max-w-md">
+<button class="w-full sm:w-auto px-8 py-4 bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-[0.25em] shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2 group" onclick="scrollToId('alquimista')">
+<span class="">Descubrir mi fragancia</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">flare</span>
+</button>
+<button class="w-full sm:w-auto px-8 py-4 bg-surface-container-high/60 backdrop-blur-md text-primary font-label-ritual text-label-ritual uppercase tracking-[0.25em] hover:bg-surface-container transition-all flex items-center justify-center gap-2" onclick="scrollToId('catalogo')">
+<span class="">Explorar decants</span>
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+</button>
+</div>
+<!-- Hero Metric Badges -->
+<div class="grid grid-cols-3 gap-8 mt-16 pt-10 max-w-xl w-full">
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary">100%</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">Garantía Auténtica</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary">+1,200</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">Decants Catados</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary">24h</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">Despacho Sigiloso</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MITOLOGÍA Y CONFIANZA -->
+<section class="w-full bg-surface-container-lowest py-8 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex items-center gap-4 p-4 rounded bg-surface-container-low/40">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">100% Originales</span>
+<span class="font-body-sm text-body-sm text-outline">Frascos madre trazables de nicho</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded bg-surface-container-low/40">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">shield_lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Envío Blindado</span>
+<span class="font-body-sm text-body-sm text-outline">Cápsulas antichoque presurizadas</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded bg-surface-container-low/40">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">markunread_mailbox</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sello de Cera</span>
+<span class="font-body-sm text-body-sm text-outline">Empaque de ritual con lacre áureo</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded bg-surface-container-low/40">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">forum</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Concierge Nocturno</span>
+<span class="font-body-sm text-body-sm text-outline">Asesoría sommelier directa 24/7</span>
+</div>
+</div>
+</div>
+</section>
+<!-- COLECCIONES DE LINAJE MITOLÓGICO -->
+<section class="w-full py-24 bg-surface-dim">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-ritual text-label-ritual uppercase text-primary tracking-[0.3em]">Canto Primordial</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-2 tracking-wide">Colecciones de Linaje</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Familias olfativas agrupadas por deidades tutelares. Encuentra tu arquetipo entre la sensualidad carnal, la soberanía o la alquimia de oriente.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<!-- Colección Afrodita -->
+<div class="group relative h-96 rounded overflow-hidden cursor-pointer bg-surface-container flex flex-col justify-end p-6" onclick="filterCategory('Para ella')">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Dark luxury perfume bottle shrouded in crimson rose petals and soft golden backlight on black obsidian pedestal" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEl5P2s7AHgu_GgZKseyOnUG3jmYVi4aH1oWQH0J_XmxmdJwSkvWdOiEJGI6iuCDAz3sZpecNdu_8rSlYUfNfjA5X9ZSQz67tGkgKAg2z8Yd_usgOlUub211vqs8mQyI_ylg73EoQ5lZndzohvpTisXEWTMcvoVm5NAJXSfRMz7QU8Q10pGM-0zDK7vVtRYl7_3vg-tu5y59xKqsZ433pZgP1kqQY5ACcvVcjLzwnmnO8wP4uApkeN')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Elixires Femeninos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Afrodita</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Rosas búlgaras, vainilla bourbon y nardo prohibido.</p>
+</div>
+</div>
+<!-- Colección Zeus -->
+<div class="group relative h-96 rounded overflow-hidden cursor-pointer bg-surface-container flex flex-col justify-end p-6" onclick="filterCategory('Para él')">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Monolithic glass flacon with dark amber fragrance surrounded by smoky lightning shadows on rough basalt stone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOxz8UX4E3Vc-PqNi3um4zo5WveAZ_ehVXeQlr85LvAkQwtkB_oWrAWg1e_vM3gGUzO70M9r9YjtGoROxlzcGUwKq9nxUBKIwjsHiidAr42zAKfWr-CUXl2_48Bgub3y5seV4huR4Oo-Vxn8ZkE0KFOViWlQ2BqeUbA12BgEPuADhUC-vJ3UEKPmGolI9-ZRjNzbABTKK-Jd_grEU-kltgUZOqYoG4gPjSvliP7C5jSy8cNQMZtavM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Poder Imperial</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Zeus</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Maderas nobles, vetiver terroso, cedro y humo sagrado.</p>
+</div>
+</div>
+<!-- Colección Dionisio -->
+<div class="group relative h-96 rounded overflow-hidden cursor-pointer bg-surface-container flex flex-col justify-end p-6" onclick="filterCategory('Unisex')">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Heavy crystalline perfume flacon with deep amethyst liquor surrounded by dark grapes and gold leaves" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeIQ-xp_pQ2cyc1nxAq4UUzLuFqHvYE2xx54SeflLt0hAdlU1SEj5Lf2K-2hLUBNhN8PzxFp2Bmt8o0Tdp5uE_e0SZYzTSXbZQQgKvTL9-XieBBnty2KVG-KCaEZgmvtdsDU6Pk0q_Bs_p7RnMarDpWNhUiGonXXMXYV85vAW2zaJPqb8kc95l_G_vo1HKHlVTEQy_cR9jNougc1iu7oLct3eSTHtmzxl5h541jvQRC_hax15f1VJk')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Noches &amp; Opulencia</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Dionisio</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Licores añejos, tabaco habano y ciruela caramelizada.</p>
+</div>
+</div>
+<!-- Colección Oasis -->
+<div class="group relative h-96 rounded overflow-hidden cursor-pointer bg-surface-container flex flex-col justify-end p-6" onclick="filterCategory('Árabes')">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Antique carved gold arabesque perfume bottle set in illuminated desert midnight sand with resins and incense" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAARpMc5BEwgwHW70Gw7px_-lc_79WWKk6P7jsFQ-sgqSTd129hkjz4AJLNDy3dV9_xym4c-VfZJlT9_yngkJc8tgWicp9mtlgwKEtndjBN8jqrCV-4lxOcJ8qjCQgIACnzbiKqtZtGriweudv8Wmm-0ntGAGfNnEGpYntd9yz-jhIAlVKPtExg-8VL2GS1AUwWefgXEfB4OPG8-ZDHYb-DmJNyH9CyItwxhzBvYL15nlxkLGoiu-qX')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Alquimia Árabe</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Oasis</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Oud real de Camboya, resinas místicas y ámbar negro.</p>
+</div>
+</div>
+<!-- Colección Hermes -->
+<div class="group relative h-96 rounded overflow-hidden cursor-pointer bg-surface-container flex flex-col justify-end p-6" onclick="filterCategory('Decants')">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Set of sleek glass decant atomizers with golden atomizing nozzles arranged linearly on polished dark marble" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkAJIhBDlbVgX_kYAcL1OMbGjXljWTQyFIkiej84_nAhd1u7pMr49QZVw3510gLEnWj0Nc0ZqKe3J7goC227Gt7w325Vf-qJ-biiZhhJzkJxiOGKHeDVBIc7bcl8pzpqG1HSxLa5oQxbjRy_dYEB47PD_f7tGHay6oAEAKVsRjlmOMOtVmNFdG0pnlRKnusSLwYuvdsm4Eq3xFRxdkM5JCqE-BfhhEyWsqmAYjNYx-K8n2SDw_p84j')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest">El Viajero</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1">Hermes</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1 line-clamp-2">Decants de 3ml, 5ml y 10ml en estuches sigilosos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CATÁLOGO INTERACTIVO CON BUSCADOR Y FILTROS -->
+<section class="w-full py-24 bg-surface" id="catalogo">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-ritual text-label-ritual uppercase text-primary tracking-[0.3em]">Cámara de Reliquias</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-2 tracking-wide">El Repertorio Olfativo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          Elige el formato de tu preferencia: el frasco ceremonial o fraccionamientos milimétricos en decants de alta precisión.
+        </p>
+</div>
+<!-- Live Search & Categories -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12 bg-surface-container-low p-4 rounded">
+<!-- Input Search -->
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container pl-12 pr-4 py-3 text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:ring-1 focus:ring-primary placeholder:text-outline transition-all" id="searchInput" oninput="handleSearch()" placeholder="Buscar por nota, casa o divinidad..." type="text">
+</div>
+<!-- Category Filters -->
+<div class="flex items-center gap-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0 scrollbar-none" id="filterChips">
+<button class="filter-btn active-filter px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-primary-container text-on-primary-container transition-all" onclick="setFilter('Todos', this)">Todos</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Decants', this)">Decants</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Perfumes completos', this)">Frascos</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Árabes', this)">Árabes</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Nicho', this)">Nicho</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Para ella', this)">Para Ella</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Para él', this)">Para Él</button>
+<button class="filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all" onclick="setFilter('Unisex', this)">Unisex</button>
+</div>
+</div>
+<!-- Products Grid (12 Items) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productGrid"><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Edición Mítica</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Quedan 3 unidades
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(1)">
+          <div style="background-image: url('placeholder')" data-alt="Luxury crimson red crystal perfume flacon with gold cap on reflective dark volcanic surface with amber and jasmine petals" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Maison Francis Kurkdjian</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(1)">Baccarat Rouge 540 Extrait</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Azafrán Rojo, Almendra Amarga</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Ámbar Gris, Almizcle Amaderado</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(1, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(1, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(1, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(1, 'Frasco (70ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              70ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-1">$48.000 COP</span>
+          </div>
+          <button onclick="addToCart(1)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Bestseller</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Alta demanda
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(2)">
+          <div style="background-image: url('placeholder')" data-alt="Regal frosted Xerjoff bottle with golden medallion crest surrounded by raw honey tobacco leaves and lavender" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Xerjoff</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(2)">Naxos 1861</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Lavanda, Bergamota, Limón</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Hojas de Tabaco, Haba Tonka, Vainilla</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(2, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(2, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(2, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(2, 'Frasco (100ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              100ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-2">$39.000 COP</span>
+          </div>
+          <button onclick="addToCart(2)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Poder Absoluto</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Quedan 2 unidades
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(3)">
+          <div style="background-image: url('placeholder')" data-alt="Dark smoke tinted cylindrical perfume bottle on blackened sand with incense smoke curls and raw oud wood" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Louis Vuitton</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(3)">Ombre Nomade</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Madera de Oud, Lágrimas de Benjuí</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Incienso, Abedul, Humo Sagrado</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(3, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(3, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(3, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(3, 'Frasco (100ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              100ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-3">$52.000 COP</span>
+          </div>
+          <button onclick="addToCart(3)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Afrodita Suprema</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Últimas piezas
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(4)">
+          <div style="background-image: url('placeholder')" data-alt="Opulent pale rose sculpted perfume bottle adorned with silk tassels set among velvet damask roses and vanilla pods" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Parfums de Marly</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(4)">Delina Exclusif</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Lichi, Pera, Bergamota</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Vainilla Bourbon, Ámbar, Evernyl</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(4, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(4, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(4, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(4, 'Frasco (75ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              75ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-4">$44.000 COP</span>
+          </div>
+          <button onclick="addToCart(4)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Alquimia Árabe</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Disponible
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(5)">
+          <div style="background-image: url('placeholder')" data-alt="Heavy crystal cut glass flask reflecting dark coffee elixir surrounded by cinnamon sticks and roasted coffee beans" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Lattafa Pride</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(5)">Khamrah Qahwa</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Jengibre, Canela, Cardamomo</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Vainilla, Haba Tonka, Benjuí</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(5, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(5, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(5, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(5, 'Frasco (100ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              100ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-5">$22.000 COP</span>
+          </div>
+          <button onclick="addToCart(5)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Edición Mítica</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Quedan 4 unidades
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(6)">
+          <div style="background-image: url('placeholder')" data-alt="Glossy jet black Creed flacon embossed with silver emperor insignia resting on slate stone with smoky pineapple and spices" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Creed</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(6)">Aventus Absolu</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Piña Ahumada, Pomelo, Bergamota</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Pachulí, Vetiver de Haití, Ambroxan</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(6, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(6, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(6, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(6, 'Frasco (75ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              75ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-6">$58.000 COP</span>
+          </div>
+          <button onclick="addToCart(6)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Dionisio</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Bestseller
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(7)">
+          <div style="background-image: url('placeholder')" data-alt="Heavy golden liquid glowing in square crystal bottle against Parisian night illumination with amber resins" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Maison Francis Kurkdjian</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(7)">Grand Soir</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Láudano Español</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Haba Tonka, Ámbar Profundo</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(7, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(7, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(7, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(7, 'Frasco (70ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              70ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-7">$42.000 COP</span>
+          </div>
+          <button onclick="addToCart(7)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Clásico Imperial</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Quedan 3 unidades
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(8)">
+          <div style="background-image: url('placeholder')" data-alt="Dark architectural Tom Ford chess piece bottle beside dried golden tobacco leaf bundles and rich vanilla bean pods" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tom Ford Private Blend</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(8)">Tobacco Vanille</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Hojas de Tabaco, Especias Aromáticas</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Frutos Secos, Notas Amaderadas</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(8, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(8, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(8, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(8, 'Frasco (50ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              50ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-8">$47.000 COP</span>
+          </div>
+          <button onclick="addToCart(8)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Copa de Dioses</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Alta demanda
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(9)">
+          <div style="background-image: url('placeholder')" data-alt="Crystal barware tumbler styled flacon containing aged cognac liquor adorned with oak barrel wood shavings and cinnamon" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Kilian Paris</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(9)">Angels' Share</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Coñac Reservado Francés</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Praliné, Vainilla Bourbon, Sándalo</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(9, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(9, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(9, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(9, 'Frasco (50ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              50ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-9">$46.000 COP</span>
+          </div>
+          <button onclick="addToCart(9)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Alquimia Árabe</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Disponible
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(10)">
+          <div style="background-image: url('placeholder')" data-alt="Prismatic holographic mirror perfume bottle catching rainbow flashes with saffron threads and luminous crystals" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Armaf</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(10)">Club de Nuit Untold</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Azafrán, Jazmín Nocturno</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Resina de Cedro, Abeto</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(10, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(10, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(10, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(10, 'Frasco (105ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              105ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-10">$18.000 COP</span>
+          </div>
+          <button onclick="addToCart(10)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Afrodita Prohibida</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Quedan 2 unidades
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(11)">
+          <div style="background-image: url('placeholder')" data-alt="Deep translucent ruby red glass bottle lit from within surrounded by dark griotte cherries and bitter almond liquor" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tom Ford Private Blend</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(11)">Lost Cherry</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Cereza Negra, Licor de Cereza, Almendra Amarga</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Bálsamo de Perú, Haba Tonka, Vetiver</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(11, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(11, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(11, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(11, 'Frasco (50ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              50ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-11">$54.000 COP</span>
+          </div>
+          <button onclick="addToCart(11)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div><div class="flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative">
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">Zeus Soberano</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Bestseller
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(12)">
+          <div style="background-image: url('placeholder')" data-alt="Charcoal smoky glass flacon surrounded by sacred agarwood chips, cardamom pods and rosewood shavings" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tom Ford Private Blend</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(12)">Oud Wood</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span class=""><strong class="text-on-surface">Salida:</strong> Palo de Rosa, Cardamomo, Pimienta China</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> Haba Tonka, Vainilla, Ámbar</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          
+            <button onclick="changeProductSize(12, '3ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              3ml
+            </button>
+          
+            <button onclick="changeProductSize(12, '5ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all bg-primary text-on-primary font-bold">
+              5ml
+            </button>
+          
+            <button onclick="changeProductSize(12, '10ml')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              10ml
+            </button>
+          
+            <button onclick="changeProductSize(12, 'Frasco (50ml)')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all text-outline hover:text-on-surface">
+              50ml
+            </button>
+          
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">5ml</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-12">$45.000 COP</span>
+          </div>
+          <button onclick="addToCart(12)" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span class="">Añadir</span>
+          </button>
+        </div>
+      </div></div>
+</div>
+</section>
+<!-- QUICK VIEW MODAL (VISTA RÁPIDA) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="quickViewModal">
+<div class="relative w-full max-w-3xl bg-surface-container rounded-lg p-6 lg:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+<button class="absolute top-6 right-6 text-outline hover:text-on-surface transition-colors" onclick="closeQuickView()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center" id="quickViewContent">
+<!-- Injected via JS -->
+</div>
+</div>
+</div>
+<!-- PRUEBA ANTES DE COMPROMETERTE (PEDAGOGÍA DECANTING) -->
+<section class="w-full py-24 bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-ritual text-label-ritual uppercase text-primary tracking-[0.3em]">Sabiduría Nocturna</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-2 tracking-wide">Prueba antes de comprometerte</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          El 85% de los perfumes de alta gama son comprados a ciegas y abandonados en un tocador. Nuestro método de decantación estéril te permite vivir la fragancia en tu propia piel.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Paso 1 -->
+<div class="p-8 rounded bg-surface-container-low flex flex-col items-center text-center group hover:bg-surface-container transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">biotech</span>
+</div>
+<span class="font-label-ritual text-label-sm text-primary tracking-widest uppercase">Fase I · Laboratorio Estéril</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-2 mb-3">Extracción al Vacío</h3>
+<p class="font-body-sm text-body-sm text-outline">
+            Extraemos el elixir directamente del frasco madre con cánulas médicas de cristal sin contacto con el aire para preservar las moléculas intactas.
+          </p>
+</div>
+<!-- Paso 2 -->
+<div class="p-8 rounded bg-surface-container-low flex flex-col items-center text-center group hover:bg-surface-container transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">science</span>
+</div>
+<span class="font-label-ritual text-label-sm text-primary tracking-widest uppercase">Fase II · Frasco Ambarino</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-2 mb-3">Nebulizador Italiano</h3>
+<p class="font-body-sm text-body-sm text-outline">
+            Sellado en frascos de vidrio neutro con atomizadores micronizados que dispensan una bruma áurea sin alterar el PH del jugo.
+          </p>
+</div>
+<!-- Paso 3 -->
+<div class="p-8 rounded bg-surface-container-low flex flex-col items-center text-center group hover:bg-surface-container transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">calendar_month</span>
+</div>
+<span class="font-label-ritual text-label-sm text-primary tracking-widest uppercase">Fase III · Ritual Cotidiano</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-2 mb-3">30 Días de Prueba</h3>
+<p class="font-body-sm text-body-sm text-outline">
+            5ml rinden más de 70 atomizaciones. Descubre cómo evoluciona en tu química personal a lo largo de las horas y estaciones antes del frasco monumental.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- EL ALQUIMISTA OLFATIVO (QUIZ DE 3 PREGUNTAS) -->
+<section class="w-full py-24 bg-surface-dim relative" id="alquimista">
+<div class="max-w-4xl mx-auto px-6">
+<div class="p-8 md:p-12 rounded-lg bg-surface-container-low shadow-xl">
+<div class="text-center mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary-container/30 text-secondary mb-3">
+<span class="material-symbols-outlined text-[16px]">psychology_alt</span>
+<span class="font-label-ritual text-label-sm uppercase tracking-widest">Oráculo de Fragancias</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-wide">El Alquimista Olfativo</h2>
+<p class="font-body-sm text-body-sm text-outline mt-2">Responde 3 preguntas y desvelaremos el elixir sagrado destinado a tu aura.</p>
+</div>
+<div id="quizContainer">
+<!-- Step 1 -->
+<div class="quiz-step flex flex-col gap-6" id="quizStep1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-center">1. ¿En qué escenario deseas que tu presencia sea inolvidable?</h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(1, 'noche')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">A</span>
+<span class="font-body-md text-body-md text-on-surface block">Reuniones nocturnas y veladas íntimas</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Seducción, calidez y misterio</span>
+</button>
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(1, 'poder')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">B</span>
+<span class="font-body-md text-body-md text-on-surface block">Salas de poder y mando ejecutivo</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Autoridad, estela imponente</span>
+</button>
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(1, 'diario')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">C</span>
+<span class="font-body-md text-body-md text-on-surface block">Uso ceremonial diario y distendido</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Frescura refinada y distinción limpia</span>
+</button>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="quiz-step hidden flex flex-col gap-6" id="quizStep2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-center">2. ¿Qué acordes despiertan tu memoria ancestral?</h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(2, 'oriental')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">A</span>
+<span class="font-body-md text-body-md text-on-surface block">Oud, Ámbar, Incienso y Resinas</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Complejidad mística y profunda</span>
+</button>
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(2, 'gourmand')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">B</span>
+<span class="font-body-md text-body-md text-on-surface block">Vainilla, Canela, Ron y Tabaco</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Dulzura oscura y licorosa</span>
+</button>
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(2, 'fresco')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">C</span>
+<span class="font-body-md text-body-md text-on-surface block">Bergamota, Hojas de Té y Vetiver</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Claridad botánica e hidro-solar</span>
+</button>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="quiz-step hidden flex flex-col gap-6" id="quizStep3">
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-center">3. ¿Cuál es tu proyección deseada?</h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(3, 'bestial')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">A</span>
+<span class="font-body-md text-body-md text-on-surface block">Monstruosa (Beast Mode)</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Llenar la estancia por más de 12 horas</span>
+</button>
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(3, 'moderada')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">B</span>
+<span class="font-body-md text-body-md text-on-surface block">Aura Magnética Privada</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Perceptible a un metro de distancia</span>
+</button>
+<button class="p-5 rounded bg-surface-container text-left hover:bg-surface-container-high transition-colors" onclick="answerQuiz(3, 'intima')">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">C</span>
+<span class="font-body-md text-body-md text-on-surface block">Skin Scent Intimista</span>
+<span class="font-body-sm text-body-sm text-outline block mt-1">Solo para quienes se acerquen a tu cuello</span>
+</button>
+</div>
+</div>
+<!-- Quiz Result -->
+<div class="hidden flex flex-col items-center text-center" id="quizResult">
+<span class="material-symbols-outlined text-primary text-[48px] mb-2 animate-bounce">award_star</span>
+<span class="font-label-ritual text-label-ritual text-primary uppercase tracking-widest">El Oráculo ha Revelado Tu Destino</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-2" id="resultTitle">Baccarat Rouge 540 Extrait</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-6" id="resultDesc">
+              Una sinfonía ambarina floral de azafrán, almendra amarga de Marruecos y madera de cedro que dejará una huella imborrable.
+            </p>
+<div class="flex items-center gap-4">
+<button class="px-6 py-3 bg-primary text-on-primary font-label-ritual text-label-ritual uppercase tracking-widest hover:bg-primary-fixed transition-colors" onclick="addDecantDirect('Baccarat Rouge 540 Extrait', '5ml', 42000)">
+                Pedir Decant Revelado (5ml)
+              </button>
+<button class="px-5 py-3 bg-surface-container text-outline hover:text-on-surface font-label-ritual text-label-ritual uppercase tracking-wider transition-colors" onclick="resetQuiz()">
+                Reiniciar
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LINAJE DEL AROMA (CRONOLOGÍA HISTÓRICA INTERACTIVA) -->
+<section class="w-full py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-ritual text-label-ritual uppercase text-primary tracking-[0.3em]">Herederos de la Noche</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-2 tracking-wide">El Linaje del Aroma</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          El perfume no nació como vanidad, sino como puente entre los mortales y los dioses. Viaja a través de nuestras cinco eras tutelares.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<!-- Era 1: Egipto -->
+<div class="p-6 rounded bg-surface-container-low flex flex-col justify-between h-80 hover:bg-surface-container transition-all">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">3000 A.C.</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Egipto Faraónico</h4>
+<span class="font-label-sm text-label-sm text-outline uppercase block mt-1">El Kyphi Sagrado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Inciensos macerados con mirra, miel y loto azul para ungir las estatuas de Ra y preservar a los soberanos eternos.
+            </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[28px]">temple_hindu</span>
+</div>
+<!-- Era 2: Grecia -->
+<div class="p-6 rounded bg-surface-container-low flex flex-col justify-between h-80 hover:bg-surface-container transition-all">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">800 A.C.</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Grecia Helénica</h4>
+<span class="font-label-sm text-label-sm text-outline uppercase block mt-1">Unciones de Olimpia</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Aceites de mirto y mejorana con los que los atletas y poetas canalizaban la inmortalidad de Apolo y Afrodita.
+            </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[28px]">sports_martial_arts</span>
+</div>
+<!-- Era 3: Roma -->
+<div class="p-6 rounded bg-surface-container-low flex flex-col justify-between h-80 hover:bg-surface-container transition-all">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">100 D.C.</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Roma Imperial</h4>
+<span class="font-label-sm text-label-sm text-outline uppercase block mt-1">Balsamarios Patricios</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Termas saturadas de azafrán y aguas de rosas donde los césares perfumaban hasta las alas de las palomas mensajeras.
+            </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[28px]">castle</span>
+</div>
+<!-- Era 4: Al-Ándalus -->
+<div class="p-6 rounded bg-surface-container-low flex flex-col justify-between h-80 hover:bg-surface-container transition-all">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">900 D.C.</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Al-Ándalus</h4>
+<span class="font-label-sm text-label-sm text-outline uppercase block mt-1">El Alambique Árabe</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Ibn Sina perfecciona la destilación del vapor. Nacen los attares concentrados de rosa de Damasco y oud salvaje.
+            </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[28px]">science</span>
+</div>
+<!-- Era 5: Versalles -->
+<div class="p-6 rounded bg-surface-container-low flex flex-col justify-between h-80 hover:bg-surface-container transition-all">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">1700 D.C.</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Corte de Versalles</h4>
+<span class="font-label-sm text-label-sm text-outline uppercase block mt-1">La Corte Perfumada</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Luis XIV exige un aroma nuevo por día. La perfumería moderna se consagra como la mayor joya invisible de Europa.
+            </p>
+</div>
+<span class="material-symbols-outlined text-outline text-[28px]">crown</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIOS Y PRUEBA SOCIAL -->
+<section class="w-full py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-ritual text-label-ritual uppercase text-primary tracking-[0.3em]">Testimonios del Cónclave</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-2 tracking-wide">Ecos de Nuestros Custodios</h2>
+<div class="flex items-center justify-center gap-1 text-primary mt-3">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-md text-body-md text-on-surface ml-2">4.98 / 5 de valoración por 480+ devotos</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-8 rounded bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">
+              "El decant de Naxos llegó en una caja con lacre dorado y sellado al vacío impecable. Me ahorró gastar 280 euros a ciegas. Duró más de 10 horas en mi piel. Servicio insuperable."
+            </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">VR</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Valeria Restrepo</span>
+<span class="font-label-sm text-label-sm text-outline">Coleccionista Verificada · Medellín</span>
+</div>
+</div>
+</div>
+<div class="p-8 rounded bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">
+              "La asesoría por WhatsApp me guió a Ombre Nomade de Louis Vuitton. Jamás había sentido una proyección tan bestial y elegante. El packaging parece de una galería de arte romana."
+            </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">SA</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Santiago Arismendi</span>
+<span class="font-label-sm text-label-sm text-outline">Cliente Habitual · Bogotá</span>
+</div>
+</div>
+</div>
+<div class="p-8 rounded bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">
+              "Los atomizadores de 10ml no gotean en el avión ni en la maleta. Tienen una bruma ultra fina que ni los frascos originales traen. Ya soy miembro áureo."
+            </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">DC</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Daniela Cardona</span>
+<span class="font-label-sm text-label-sm text-outline">Custodia Áurea · Cali</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PREGUNTAS FRECUENTES (ACORDEÓN INTERACTIVO) -->
+<section class="w-full py-24 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="font-label-ritual text-label-ritual uppercase text-primary tracking-[0.3em]">Misterios Desvelados</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-2 tracking-wide">Preguntas Frecuentes</h2>
+</div>
+<div class="flex flex-col gap-4">
+<div class="faq-item rounded bg-surface-container-low overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="">¿Cómo garantizan que el perfume es 100% original?</span>
+<span class="material-symbols-outlined transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant font-body-md text-body-md">
+            Adquirimos cada botella matriz exclusivamente a distribuidores oficiales autorizados en Europa y Medio Oriente con código de lote verificable (batch code). Puedes solicitar foto del batch code de tu frasco nodriza por nuestro canal de concierge.
+          </div>
+</div>
+<div class="faq-item rounded bg-surface-container-low overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="">¿En qué consiste el proceso de decantación estéril?</span>
+<span class="material-symbols-outlined transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant font-body-md text-body-md">
+            Se realiza en cabina de flujo laminar desinfectada con cánula de grado quirúrgico. La fragancia pasa del frasco madre al decant de vidrio sin nebulizarse al ambiente, evitando la oxidación prematura de las notas de salida.
+          </div>
+</div>
+<div class="faq-item rounded bg-surface-container-low overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="">¿Cuánto rinde cada tamaño de decant?</span>
+<span class="material-symbols-outlined transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant font-body-md text-body-md">
+            3ml rinde aproximadamente 45 atomizaciones (10-15 días de uso); 5ml rinde unas 75 atomizaciones (un mes completo); y 10ml ofrece hasta 150 pulverizaciones con nebulizador presurizado italiano.
+          </div>
+</div>
+<div class="faq-item rounded bg-surface-container-low overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="">¿Cuáles son los tiempos de envío y medios de pago?</span>
+<span class="material-symbols-outlined transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 text-on-surface-variant font-body-md text-body-md">
+            Despachos en 24 a 48 horas hábiles a todo el territorio nacional con embalaje acolchado antichoque. Aceptamos tarjetas de crédito, PSE, transferencias bancarias y pago contraentrega en ciudades seleccionadas.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER DE LEALTAD Y CUPÓN AUREA10 -->
+<section class="w-full py-20 bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-6 text-center relative z-10 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">auto_awesome</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-wide">Tu noche dorada empieza aquí</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-3 mb-6">
+        Ingresa a nuestro cónclave nocturno y recibe un 10% de descuento en tu primer ritual de decants con el salvoconducto sagrado.
+      </p>
+<div class="inline-flex items-center gap-3 px-6 py-3 rounded bg-surface-container-lowest border-dashed border-2 border-primary/40 mb-8 cursor-pointer group" onclick="copyCoupon()">
+<span class="font-label-ritual text-label-ritual uppercase text-outline">Código Sagrado:</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-widest font-bold" id="couponText">AUREA10</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-125 transition-transform">content_copy</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary hidden -mt-4 mb-4" id="couponMsg">¡Código copiado al portapapeles!</p>
+<div class="w-full max-w-md flex flex-col sm:flex-row gap-3">
+<input class="w-full bg-surface-container-lowest px-4 py-3 rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary placeholder:text-outline" placeholder="Ingresa tu correo confidencial" type="email">
+<button class="px-6 py-3 bg-primary text-on-primary font-label-ritual text-label-ritual uppercase tracking-widest hover:bg-primary-fixed transition-colors whitespace-nowrap">
+          Consagrarme
+        </button>
+</div>
+</div>
+</section>
+<!-- SACRED CART (CARRITO LATERAL DESLIZABLE) -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[450px] bg-surface-container-lowest z-50 shadow-2xl transform translate-x-full transition-transform duration-500 flex flex-col" id="sacredCart">
+<!-- Header Cart -->
+<div class="p-6 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">local_mall</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Sacred Cart</span>
+</div>
+<button class="text-outline hover:text-on-surface transition-colors" onclick="toggleCart()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Envío Gratis Progress Bar -->
+<div class="p-4 bg-surface-container text-center">
+<p class="font-label-sm text-label-sm uppercase text-primary tracking-wider mb-2" id="freeShippingText">Te faltan $200.000 para Envío Blindado Gratis</p>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500" id="freeShippingBar" style="width: 0%;"></div>
+</div>
+</div>
+<!-- Items List -->
+<div class="flex-1 overflow-y-auto p-6 flex flex-col gap-4" id="cartItemsList">
+<div class="text-center py-20 text-outline">
+<span class="material-symbols-outlined text-[48px] opacity-40 mb-2">water_bottle</span>
+<p class="font-body-md text-body-md">Tu santuario de compras está vacío.</p>
+</div>
+</div>
+<!-- Footer Checkout -->
+<div class="p-6 bg-surface-container-low flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-ritual text-label-ritual uppercase text-outline">Total Consagrado</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="cartTotalPrice">$0 COP</span>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-label-ritual text-label-ritual uppercase tracking-[0.2em] hover:bg-primary-fixed transition-all flex items-center justify-center gap-2" onclick="checkoutWhatsApp()">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">Finalizar por Concierge WhatsApp</span>
+</button>
+<span class="font-label-sm text-label-sm text-center text-outline">Atención personalizada con sommelier olfativo</span>
+</div>
+</div>
+<!-- SACRED CART BACKDROP OVERLAY -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-sm z-40 hidden" id="cartBackdrop" onclick="toggleCart()"></div>
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-2xl hover:scale-110 hover:bg-primary-fixed transition-all group" href="https://wa.me/?text=Hola%20Nox%20Aurea,%20deseo%20asesoría%20con%20mis%20fragancias" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+<span class="absolute right-16 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      Concierge Olfativo
+    </span>
+</a>
+</div>
+<!-- CLIENT JAVASCRIPT: LOGIC, CATALOGUE, CART & INTERACTION -->
+<script>
+  // 12 HIGH-END FRAGRANCES DATABASE
+  const PRODUCTS = [
+    {
+      id: 1,
+      name: "Baccarat Rouge 540 Extrait",
+      house: "Maison Francis Kurkdjian",
+      category: "Unisex",
+      badge: "Edición Mítica",
+      scarcity: "Quedan 3 unidades",
+      image: "placeholder",
+      imgAlt: "Luxury crimson red crystal perfume flacon with gold cap on reflective dark volcanic surface with amber and jasmine petals",
+      top: "Azafrán Rojo, Almendra Amarga",
+      heart: "Jazmín Grandiflorum, Cedro",
+      base: "Ámbar Gris, Almizcle Amaderado",
+      sillage: "Monstruosa (+12h)",
+      occasion: "Noche de Gala, Conquista",
+      prices: { "3ml": 32000, "5ml": 48000, "10ml": 88000, "Frasco (70ml)": 1850000 }
+    },
+    {
+      id: 2,
+      name: "Naxos 1861",
+      house: "Xerjoff",
+      category: "Nicho",
+      badge: "Bestseller",
+      scarcity: "Alta demanda",
+      image: "placeholder",
+      imgAlt: "Regal frosted Xerjoff bottle with golden medallion crest surrounded by raw honey tobacco leaves and lavender",
+      top: "Lavanda, Bergamota, Limón",
+      heart: "Miel, Canela, Jazmín Sambac",
+      base: "Hojas de Tabaco, Haba Tonka, Vainilla",
+      sillage: "Fuerte (10h)",
+      occasion: "Otoño/Invierno, Reunión Elegante",
+      prices: { "3ml": 26000, "5ml": 39000, "10ml": 72000, "Frasco (100ml)": 1150000 }
+    },
+    {
+      id: 3,
+      name: "Ombre Nomade",
+      house: "Louis Vuitton",
+      category: "Para él",
+      badge: "Poder Absoluto",
+      scarcity: "Quedan 2 unidades",
+      image: "placeholder",
+      imgAlt: "Dark smoke tinted cylindrical perfume bottle on blackened sand with incense smoke curls and raw oud wood",
+      top: "Madera de Oud, Lágrimas de Benjuí",
+      heart: "Rosa de Mayo, Frambuesa Silvestre",
+      base: "Incienso, Abedul, Humo Sagrado",
+      sillage: "Bestial (+14h)",
+      occasion: "Noche Soberana, Impacto",
+      prices: { "3ml": 34000, "5ml": 52000, "10ml": 98000, "Frasco (100ml)": 2100000 }
+    },
+    {
+      id: 4,
+      name: "Delina Exclusif",
+      house: "Parfums de Marly",
+      category: "Para ella",
+      badge: "Afrodita Suprema",
+      scarcity: "Últimas piezas",
+      image: "placeholder",
+      imgAlt: "Opulent pale rose sculpted perfume bottle adorned with silk tassels set among velvet damask roses and vanilla pods",
+      top: "Lichi, Pera, Bergamota",
+      heart: "Rosa Turca, Oud, Incienso",
+      base: "Vainilla Bourbon, Ámbar, Evernyl",
+      sillage: "Pronunciada (10h)",
+      occasion: "Cita Romántica, Exclusividad",
+      prices: { "3ml": 29000, "5ml": 44000, "10ml": 82000, "Frasco (75ml)": 1450000 }
+    },
+    {
+      id: 5,
+      name: "Khamrah Qahwa",
+      house: "Lattafa Pride",
+      category: "Árabes",
+      badge: "Alquimia Árabe",
+      scarcity: "Disponible",
+      image: "placeholder",
+      imgAlt: "Heavy crystal cut glass flask reflecting dark coffee elixir surrounded by cinnamon sticks and roasted coffee beans",
+      top: "Jengibre, Canela, Cardamomo",
+      heart: "Café Tostado, Praliné, Frutas Confitadas",
+      base: "Vainilla, Haba Tonka, Benjuí",
+      sillage: "Intensa (9h)",
+      occasion: "Climas Fríos, Café Nocturno",
+      prices: { "3ml": 14000, "5ml": 22000, "10ml": 38000, "Frasco (100ml)": 280000 }
+    },
+    {
+      id: 6,
+      name: "Aventus Absolu",
+      house: "Creed",
+      category: "Para él",
+      badge: "Edición Mítica",
+      scarcity: "Quedan 4 unidades",
+      image: "placeholder",
+      imgAlt: "Glossy jet black Creed flacon embossed with silver emperor insignia resting on slate stone with smoky pineapple and spices",
+      top: "Piña Ahumada, Pomelo, Bergamota",
+      heart: "Cardamomo, Jengibre, Canela",
+      base: "Pachulí, Vetiver de Haití, Ambroxan",
+      sillage: "Magnética (8h)",
+      occasion: "Liderazgo, Ocasión Especial",
+      prices: { "3ml": 38000, "5ml": 58000, "10ml": 110000, "Frasco (75ml)": 2250000 }
+    },
+    {
+      id: 7,
+      name: "Grand Soir",
+      house: "Maison Francis Kurkdjian",
+      category: "Unisex",
+      badge: "Dionisio",
+      scarcity: "Bestseller",
+      image: "placeholder",
+      imgAlt: "Heavy golden liquid glowing in square crystal bottle against Parisian night illumination with amber resins",
+      top: "Láudano Español",
+      heart: "Benjuí de Siam, Vainilla",
+      base: "Haba Tonka, Ámbar Profundo",
+      sillage: "Elegante y Prolongada (11h)",
+      occasion: "Cena Íntima, Velada de Teatro",
+      prices: { "3ml": 28000, "5ml": 42000, "10ml": 78000, "Frasco (70ml)": 1280000 }
+    },
+    {
+      id: 8,
+      name: "Tobacco Vanille",
+      house: "Tom Ford Private Blend",
+      category: "Nicho",
+      badge: "Clásico Imperial",
+      scarcity: "Quedan 3 unidades",
+      image: "placeholder",
+      imgAlt: "Dark architectural Tom Ford chess piece bottle beside dried golden tobacco leaf bundles and rich vanilla bean pods",
+      top: "Hojas de Tabaco, Especias Aromáticas",
+      heart: "Haba Tonka, Flor del Tabaco, Vainilla",
+      base: "Frutos Secos, Notas Amaderadas",
+      sillage: "Pesada (12h)",
+      occasion: "Invierno, Club Privado",
+      prices: { "3ml": 31000, "5ml": 47000, "10ml": 89000, "Frasco (50ml)": 1580000 }
+    },
+    {
+      id: 9,
+      name: "Angels' Share",
+      house: "Kilian Paris",
+      category: "Unisex",
+      badge: "Copa de Dioses",
+      scarcity: "Alta demanda",
+      image: "placeholder",
+      imgAlt: "Crystal barware tumbler styled flacon containing aged cognac liquor adorned with oak barrel wood shavings and cinnamon",
+      top: "Coñac Reservado Francés",
+      heart: "Canela, Corteza de Roble, Haba Tonka",
+      base: "Praliné, Vainilla Bourbon, Sándalo",
+      sillage: "Embriagadora (10h)",
+      occasion: "Fiesta Exclusiva, Brindis",
+      prices: { "3ml": 30000, "5ml": 46000, "10ml": 86000, "Frasco (50ml)": 1390000 }
+    },
+    {
+      id: 10,
+      name: "Club de Nuit Untold",
+      house: "Armaf",
+      category: "Árabes",
+      badge: "Alquimia Árabe",
+      scarcity: "Disponible",
+      image: "placeholder",
+      imgAlt: "Prismatic holographic mirror perfume bottle catching rainbow flashes with saffron threads and luminous crystals",
+      top: "Azafrán, Jazmín Nocturno",
+      heart: "Madera de Ámbar, Gris Amaderado",
+      base: "Resina de Cedro, Abeto",
+      sillage: "Fuerte (9h)",
+      occasion: "Diario Distinguido, Salidas",
+      prices: { "3ml": 12000, "5ml": 18000, "10ml": 32000, "Frasco (105ml)": 240000 }
+    },
+    {
+      id: 11,
+      name: "Lost Cherry",
+      house: "Tom Ford Private Blend",
+      category: "Para ella",
+      badge: "Afrodita Prohibida",
+      scarcity: "Quedan 2 unidades",
+      image: "placeholder",
+      imgAlt: "Deep translucent ruby red glass bottle lit from within surrounded by dark griotte cherries and bitter almond liquor",
+      top: "Cereza Negra, Licor de Cereza, Almendra Amarga",
+      heart: "Ciruela, Rosa Turca, Jazmín Sambac",
+      base: "Bálsamo de Perú, Haba Tonka, Vetiver",
+      sillage: "Moderada / Seductora (7h)",
+      occasion: "Seducción, Citas Nocturnas",
+      prices: { "3ml": 35000, "5ml": 54000, "10ml": 99000, "Frasco (50ml)": 1750000 }
+    },
+    {
+      id: 12,
+      name: "Oud Wood",
+      house: "Tom Ford Private Blend",
+      category: "Para él",
+      badge: "Zeus Soberano",
+      scarcity: "Bestseller",
+      image: "placeholder",
+      imgAlt: "Charcoal smoky glass flacon surrounded by sacred agarwood chips, cardamom pods and rosewood shavings",
+      top: "Palo de Rosa, Cardamomo, Pimienta China",
+      heart: "Madera de Oud, Sándalo, Vetiver",
+      base: "Haba Tonka, Vainilla, Ámbar",
+      sillage: "Aura Privada Noble (8h)",
+      occasion: "Reuniones de Alta Jerarquía",
+      prices: { "3ml": 30000, "5ml": 45000, "10ml": 84000, "Frasco (50ml)": 1490000 }
+    }
+  ];
+
+  // STATE MANAGEMENT
+  let currentFilter = "Todos";
+  let cart = [];
+  const selectedSizes = {};
+
+  // Initialize Default Selected Sizes for products
+  PRODUCTS.forEach(p => {
+    selectedSizes[p.id] = "5ml";
+  });
+
+  // FORMAT CURRENCY
+  function formatCOP(amount) {
+    return "$" + amount.toLocaleString("es-CO") + " COP";
+  }
+
+  // RENDER PRODUCTS
+  function renderProducts(items) {
+    const grid = document.getElementById("productGrid");
+    grid.innerHTML = "";
+
+    if (items.length === 0) {
+      grid.innerHTML = `
+        <div class="col-span-full py-16 text-center text-outline">
+          <span class="material-symbols-outlined text-[48px] opacity-40 mb-2">search_off</span>
+          <p class="font-body-md text-body-md">No se han hallado elixires con esos criterios en el santuario.</p>
+        </div>
+      `;
+      return;
+    }
+
+    items.forEach(p => {
+      const currentSize = selectedSizes[p.id] || "5ml";
+      const currentPrice = p.prices[currentSize];
+
+      const card = document.createElement("div");
+      card.className = "flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative";
+      card.innerHTML = `
+        <!-- Scarcity Badge -->
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">${p.badge}</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            ${p.scarcity}
+          </span>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(${p.id})">
+          <div style="background-image: url('${p.image}')" data-alt="${p.imgAlt}" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          
+          <!-- Quick View Trigger Overlay -->
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> Vista Ritual
+          </button>
+        </div>
+
+        <!-- Product Meta -->
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">${p.house}</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(${p.id})">${p.name}</h3>
+
+        <!-- Notes Teaser -->
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span><strong class="text-on-surface">Salida:</strong> ${p.top}</span>
+          <span class="truncate"><strong class="text-on-surface">Fondo:</strong> ${p.base}</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          ${Object.keys(p.prices).map(size => `
+            <button onclick="changeProductSize(${p.id}, '${size}')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all ${size === currentSize ? 'bg-primary text-on-primary font-bold' : 'text-outline hover:text-on-surface'}">
+              ${size.replace('Frasco (', '').replace(')', '')}
+            </button>
+          `).join('')}
+        </div>
+
+        <!-- Price & CTA Button -->
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">${currentSize}</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-${p.id}">${formatCOP(currentPrice)}</span>
+          </div>
+          <button onclick="addToCart(${p.id})" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span>Añadir</span>
+          </button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // CHANGE SIZE ON CARD
+  function changeProductSize(productId, size) {
+    selectedSizes[productId] = size;
+    const p = PRODUCTS.find(item => item.id === productId);
+    if (p) {
+      document.getElementById(`price-${productId}`).textContent = formatCOP(p.prices[size]);
+      // Re-render to update selected button style
+      renderProducts(getFilteredProducts());
+    }
+  }
+
+  // FILTERING LOGIC
+  function setFilter(cat, btn) {
+    currentFilter = cat;
+    document.querySelectorAll(".filter-btn").forEach(b => {
+      b.className = "filter-btn px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-surface-container text-outline hover:text-on-surface transition-all";
+    });
+    btn.className = "filter-btn active-filter px-4 py-2 rounded text-label-ritual font-label-ritual uppercase tracking-wider bg-primary-container text-on-primary-container transition-all";
+    renderProducts(getFilteredProducts());
+  }
+
+  function filterCategory(cat) {
+    scrollToId('catalogo');
+    const matchingBtn = Array.from(document.querySelectorAll('.filter-btn')).find(b => b.textContent.trim().toLowerCase().includes(cat.toLowerCase()));
+    if (matchingBtn) {
+      setFilter(cat, matchingBtn);
+    }
+  }
+
+  function getFilteredProducts() {
+    const searchVal = document.getElementById("searchInput").value.toLowerCase().trim();
+    return PRODUCTS.filter(p => {
+      const matchesSearch = p.name.toLowerCase().includes(searchVal) || 
+                            p.house.toLowerCase().includes(searchVal) || 
+                            p.top.toLowerCase().includes(searchVal) || 
+                            p.heart.toLowerCase().includes(searchVal) || 
+                            p.base.toLowerCase().includes(searchVal);
+
+      if (!matchesSearch) return false;
+
+      if (currentFilter === "Todos") return true;
+      if (currentFilter === "Decants") return true; // All can be decanted
+      if (currentFilter === "Perfumes completos") return true;
+      return p.category.toLowerCase() === currentFilter.toLowerCase();
+    });
+  }
+
+  function handleSearch() {
+    renderProducts(getFilteredProducts());
+  }
+
+  // QUICK VIEW MODAL
+  function openQuickView(id) {
+    const p = PRODUCTS.find(item => item.id === id);
+    if (!p) return;
+
+    const modal = document.getElementById("quickViewModal");
+    const container = document.getElementById("quickViewContent");
+    const currentSize = selectedSizes[p.id] || "5ml";
+
+    container.innerHTML = `
+      <div class="h-80 sm:h-96 rounded bg-surface-container-lowest overflow-hidden relative">
+        <div style="background-image: url('${p.image}')" data-alt="${p.imgAlt}" class="w-full h-full bg-cover bg-center"></div>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-0.5 rounded bg-secondary-container/30 text-secondary">${p.badge}</span>
+          <span class="font-label-sm text-label-sm text-primary uppercase">${p.category}</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-outline uppercase">${p.house}</span>
+        <h3 class="font-headline-lg text-headline-lg text-on-surface uppercase mt-1 mb-4">${p.name}</h3>
+
+        <!-- Pirámide Olfativa Detallada -->
+        <div class="space-y-3 p-4 rounded bg-surface-container-lowest mb-6">
+          <div class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[18px]">vertical_align_top</span>
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm text-outline uppercase font-bold">Salida (0 - 15 min)</span>
+              <span class="font-body-sm text-body-sm text-on-surface">${p.top}</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[18px]">favorite</span>
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm text-outline uppercase font-bold">Corazón (15 min - 4h)</span>
+              <span class="font-body-sm text-body-sm text-on-surface">${p.heart}</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[18px]">vertical_align_bottom</span>
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm text-outline uppercase font-bold">Fondo (4h - 24h)</span>
+              <span class="font-body-sm text-body-sm text-on-surface">${p.base}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="p-3 rounded bg-surface-container-low">
+            <span class="font-label-sm text-label-sm text-outline uppercase block">Estela & Duración</span>
+            <span class="font-headline-sm text-headline-sm text-on-surface block mt-1">${p.sillage}</span>
+          </div>
+          <div class="p-3 rounded bg-surface-container-low">
+            <span class="font-label-sm text-label-sm text-outline uppercase block">Ocasión Sagrada</span>
+            <span class="font-headline-sm text-headline-sm text-on-surface block mt-1">${p.occasion}</span>
+          </div>
+        </div>
+
+        <button onclick="addToCart(${p.id}); closeQuickView();" class="w-full py-4 bg-primary text-on-primary font-label-ritual text-label-ritual uppercase tracking-[0.2em] hover:bg-primary-fixed transition-colors flex items-center justify-center gap-2">
+          <span>Añadir al Ritual (${currentSize} - ${formatCOP(p.prices[currentSize])})</span>
+        </button>
+      </div>
+    `;
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+
+  function closeQuickView() {
+    const modal = document.getElementById("quickViewModal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+
+  // CART OPERATIONS
+  function addToCart(productId) {
+    const p = PRODUCTS.find(item => item.id === productId);
+    if (!p) return;
+    const size = selectedSizes[p.id] || "5ml";
+    const price = p.prices[size];
+
+    const existingIndex = cart.findIndex(item => item.id === productId && item.size === size);
+    if (existingIndex > -1) {
+      cart[existingIndex].qty += 1;
+    } else {
+      cart.push({
+        id: p.id,
+        name: p.name,
+        house: p.house,
+        size: size,
+        price: price,
+        qty: 1
+      });
+    }
+
+    renderCart();
+    toggleCart(true);
+  }
+
+  function addDecantDirect(name, size, price) {
+    const existing = cart.find(i => i.name === name && i.size === size);
+    if (existing) {
+      existing.qty++;
+    } else {
+      cart.push({ id: Date.now(), name: name, house: "Nox Aurea Sanctuary", size: size, price: price, qty: 1 });
+    }
+    renderCart();
+    toggleCart(true);
+  }
+
+  function changeCartQty(index, delta) {
+    cart[index].qty += delta;
+    if (cart[index].qty <= 0) {
+      cart.splice(index, 1);
+    }
+    renderCart();
+  }
+
+  function renderCart() {
+    const list = document.getElementById("cartItemsList");
+    const totalEl = document.getElementById("cartTotalPrice");
+    const shippingBar = document.getElementById("freeShippingBar");
+    const shippingText = document.getElementById("freeShippingText");
+
+    let total = 0;
+    let totalItems = 0;
+
+    if (cart.length === 0) {
+      list.innerHTML = `
+        <div class="text-center py-20 text-outline">
+          <span class="material-symbols-outlined text-[48px] opacity-40 mb-2">water_bottle</span>
+          <p class="font-body-md text-body-md">Tu santuario de compras está vacío.</p>
+        </div>
+      `;
+      totalEl.textContent = "$0 COP";
+      shippingBar.style.width = "0%";
+      shippingText.textContent = "Te faltan $200.000 para Envío Blindado Gratis";
+      return;
+    }
+
+    list.innerHTML = "";
+    cart.forEach((item, index) => {
+      total += item.price * item.qty;
+      totalItems += item.qty;
+
+      const row = document.createElement("div");
+      row.className = "flex items-center justify-between p-3 rounded bg-surface-container-low";
+      row.innerHTML = `
+        <div class="flex flex-col max-w-[200px]">
+          <span class="font-headline-sm text-headline-sm text-on-surface truncate">${item.name}</span>
+          <span class="font-label-sm text-label-sm text-outline">${item.size} · ${formatCOP(item.price)}</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="changeCartQty(${index}, -1)" class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-outline hover:text-on-surface">-</button>
+          <span class="font-body-sm text-body-sm font-bold w-4 text-center">${item.qty}</span>
+          <button onclick="changeCartQty(${index}, 1)" class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-outline hover:text-on-surface">+</button>
+        </div>
+      `;
+      list.appendChild(row);
+    });
+
+    totalEl.textContent = formatCOP(total);
+
+    // Free shipping calculation threshold: $200.000
+    const threshold = 200000;
+    if (total >= threshold) {
+      shippingBar.style.width = "100%";
+      shippingText.textContent = "¡Has consagrado el Envío Blindado Gratis!";
+    } else {
+      const diff = threshold - total;
+      const pct = (total / threshold) * 100;
+      shippingBar.style.width = pct + "%";
+      shippingText.textContent = `Te faltan ${formatCOP(diff)} para Envío Gratis`;
+    }
+  }
+
+  function toggleCart(forceOpen = false) {
+    const cartEl = document.getElementById("sacredCart");
+    const backdrop = document.getElementById("cartBackdrop");
+
+    if (forceOpen || cartEl.classList.contains("translate-x-full")) {
+      cartEl.classList.remove("translate-x-full");
+      backdrop.classList.remove("hidden");
+    } else {
+      cartEl.classList.add("translate-x-full");
+      backdrop.classList.add("hidden");
+    }
+  }
+
+  // CHECKOUT POR WHATSAPP ESTRUCTURADO
+  function checkoutWhatsApp() {
+    if (cart.length === 0) {
+      alert("Tu Sacred Cart está vacío. Añade una fragancia para consagrar el pedido.");
+      return;
+    }
+
+    let msg = "*SANTUARIO NOX AUREA - ORDEN DE DESPACHO*%0A";
+    msg += "Deseo consagrar mi orden con los siguientes elixires:%0A%0A";
+
+    let total = 0;
+    cart.forEach((i, idx) => {
+      const sub = i.price * i.qty;
+      total += sub;
+      msg += `${idx + 1}. *${i.name}* (${i.size}) x${i.qty} = $${sub.toLocaleString("es-CO")} COP%0A`;
+    });
+
+    msg += `%0A*TOTAL ORDEN:* $${total.toLocaleString("es-CO")} COP%0A`;
+    if (total >= 200000) {
+      msg += "*BENEFICIO:* Envío Blindado Gratis Incluido%0A";
+    }
+    msg += "%0APor favor coordinar despacho con sello de cera y datos de envío.";
+
+    window.open(`https://wa.me/?text=${msg}`, "_blank");
+  }
+
+  // QUIZ DEL ALQUIMISTA
+  let quizAnswers = {};
+  function answerQuiz(step, answer) {
+    quizAnswers[step] = answer;
+    document.getElementById(`quizStep${step}`).classList.add("hidden");
+
+    if (step < 3) {
+      document.getElementById(`quizStep${step + 1}`).classList.remove("hidden");
+    } else {
+      showQuizResult();
+    }
+  }
+
+  function showQuizResult() {
+    const resultDiv = document.getElementById("quizResult");
+    const title = document.getElementById("resultTitle");
+    const desc = document.getElementById("resultDesc");
+
+    // Dynamic resolution based on combinations
+    if (quizAnswers[2] === "oriental") {
+      title.textContent = "Ombre Nomade · Louis Vuitton";
+      desc.textContent = "El rey supremo del oud y humo sagrado. Un aura de soberanía inquebrantable para quienes dejan huella imborrable.";
+    } else if (quizAnswers[2] === "gourmand") {
+      title.textContent = "Naxos 1861 · Xerjoff";
+      desc.textContent = "Miel de flores blancas, tabaco rubio y lavanda siciliana. La decadencia aristocrática hecha perfume.";
+    } else {
+      title.textContent = "Aventus Absolu · Creed";
+      desc.textContent = "Una apertura de piña ahumada y cardamomo salvaje con maderas preciosas que irradian magnetismo puro.";
+    }
+
+    resultDiv.classList.remove("hidden");
+  }
+
+  function resetQuiz() {
+    quizAnswers = {};
+    document.getElementById("quizResult").classList.add("hidden");
+    document.getElementById("quizStep1").classList.remove("hidden");
+    document.getElementById("quizStep2").classList.add("hidden");
+    document.getElementById("quizStep3").classList.add("hidden");
+  }
+
+  // FAQ ACCORDION
+  function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector(".material-symbols-outlined");
+    const isHidden = content.classList.contains("hidden");
+
+    document.querySelectorAll(".faq-content").forEach(c => c.classList.add("hidden"));
+    document.querySelectorAll(".faq-item .material-symbols-outlined").forEach(i => i.classList.remove("rotate-180"));
+
+    if (isHidden) {
+      content.classList.remove("hidden");
+      icon.classList.add("rotate-180");
+    }
+  }
+
+  // COPY COUPON
+  function copyCoupon() {
+    navigator.clipboard.writeText("AUREA10");
+    const msg = document.getElementById("couponMsg");
+    msg.classList.remove("hidden");
+    setTimeout(() => msg.classList.add("hidden"), 3000);
+  }
+
+  // SMOOTH SCROLL
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // ATTACH CART HEADER LINK
+  window.addEventListener('DOMContentLoaded', () => {
+    renderProducts(PRODUCTS);
+    const cartTrigger = document.querySelector('[data-path="sacred-cart"]');
+    if (cartTrigger) {
+      cartTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleCart();
+      });
+    }
+  });
+</script><script id="theme-lang-controller">
+  // THEME MANAGEMENT
+  function initTheme() {
+    const savedTheme = localStorage.getItem('nox_theme') || 'dark';
+    applyTheme(savedTheme);
+  }
+
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const icon = document.getElementById('themeToggleIcon');
+    if (theme === 'light') {
+      html.classList.remove('dark');
+      if (icon) icon.textContent = 'dark_mode';
+    } else {
+      html.classList.add('dark');
+      if (icon) icon.textContent = 'light_mode';
+    }
+    localStorage.setItem('nox_theme', theme);
+  }
+
+  function toggleTheme() {
+    const isDark = document.documentElement.classList.contains('dark');
+    applyTheme(isDark ? 'light' : 'dark');
+  }
+
+  // DICTIONARY FOR FULL ENGLISH & SPANISH CONVERSION
+  const I18N = {
+    es: {
+      topBanner: "Envío gratis desde $200.000 · Muestras de obsequio en cada orden",
+      navCollections: "Colecciones",
+      navDecants: "Decants",
+      navPerfumes: "Perfumes",
+      navAbout: "Nosotros",
+      navContact: "Contacto",
+      heroEyebrow: "Sanctuarium Olfactorium & Decants Rares",
+      heroTitle1: "Lo que dejas en el aire,",
+      heroTitle2: "te consagra para la eternidad.",
+      heroDesc: "Custodiaremos para ti extractos monumentales y decants milimétricos en frascos de cristal oscuro. Descubre tu firma olfativa a través del misticismo nocturno.",
+      heroBtn1: "Descubrir mi fragancia",
+      heroBtn2: "Explorar decants",
+      heroMetric1: "Garantía Auténtica",
+      heroMetric2: "Decants Catados",
+      heroMetric3: "Despacho Sigiloso",
+      trust1Title: "100% Originales",
+      trust1Desc: "Frascos madre trazables de nicho",
+      trust2Title: "Envío Blindado",
+      trust2Desc: "Cápsulas antichoque presurizadas",
+      trust3Title: "Sello de Cera",
+      trust3Desc: "Empaque de ritual con lacre áureo",
+      trust4Title: "Concierge Nocturno",
+      trust4Desc: "Asesoría sommelier directa 24/7",
+      lineageEyebrow: "Canto Primordial",
+      lineageTitle: "Colecciones de Linaje",
+      lineageDesc: "Familias olfativas agrupadas por deidades tutelares. Encuentra tu arquetipo entre la sensualidad carnal, la soberanía o la alquimia de oriente.",
+      colAphroditeTag: "Elixires Femeninos",
+      colAphroditeDesc: "Rosas búlgaras, vainilla bourbon y nardo prohibido.",
+      colZeusTag: "Poder Imperial",
+      colZeusDesc: "Maderas nobles, vetiver terroso, cedro y humo sagrado.",
+      colDionysusTag: "Noches & Opulencia",
+      colDionysusDesc: "Licores añejos, tabaco habano y ciruela caramelizada.",
+      colOasisTag: "Alquimia Árabe",
+      colOasisDesc: "Oud real de Camboya, resinas místicas y ámbar negro.",
+      colHermesTag: "El Viajero",
+      colHermesDesc: "Decants de 3ml, 5ml y 10ml en estuches sigilosos.",
+      catEyebrow: "Cámara de Reliquias",
+      catTitle: "El Repertorio Olfativo",
+      catDesc: "Elige el formato de tu preferencia: el frasco ceremonial o fraccionamientos milimétricos en decants de alta precisión.",
+      searchPlaceholder: "Buscar por nota, casa o divinidad...",
+      filterAll: "Todos",
+      filterDecants: "Decants",
+      filterBottles: "Frascos",
+      filterArab: "Árabes",
+      filterNiche: "Nicho",
+      filterHer: "Para Ella",
+      filterHim: "Para Él",
+      filterUnisex: "Unisex",
+      trialEyebrow: "Sabiduría Nocturna",
+      trialTitle: "Prueba antes de comprometerte",
+      trialDesc: "El 85% de los perfumes de alta gama son comprados a ciegas y abandonados en un tocador. Nuestro método de decantación estéril te permite vivir la fragancia en tu propia piel.",
+      trialStep1Tag: "Fase I · Laboratorio Estéril",
+      trialStep1Title: "Extracción al Vacío",
+      trialStep1Desc: "Extraemos el elixir directamente del frasco madre con cánulas médicas de cristal sin contacto con el aire para preservar las moléculas intactas.",
+      trialStep2Tag: "Fase II · Frasco Ambarino",
+      trialStep2Title: "Nebulizador Italiano",
+      trialStep2Desc: "Sellado en frascos de vidrio neutro con atomizadores micronizados que dispensan una bruma áurea sin alterar el PH del jugo.",
+      trialStep3Tag: "Fase III · Ritual Cotidiano",
+      trialStep3Title: "30 Días de Prueba",
+      trialStep3Desc: "5ml rinden más de 70 atomizaciones. Descubre cómo evoluciona en tu química personal a lo largo de las horas y estaciones antes del frasco monumental.",
+      oracleTag: "Oráculo de Fragancias",
+      oracleTitle: "El Alquimista Olfativo",
+      oracleSubtitle: "Responde 3 preguntas y desvelaremos el elixir sagrado destinado a tu aura.",
+      q1: "1. ¿En qué escenario deseas que tu presencia sea inolvidable?",
+      q1A: "Reuniones nocturnas y veladas íntimas",
+      q1ASub: "Seducción, calidez y misterio",
+      q1B: "Salas de poder y mando ejecutivo",
+      q1BSub: "Autoridad, estela imponente",
+      q1C: "Uso ceremonial diario y distendido",
+      q1CSub: "Frescura refinada y distinción limpia",
+      q2: "2. ¿Qué acordes despiertan tu memoria ancestral?",
+      q2A: "Oud, Ámbar, Incienso y Resinas",
+      q2ASub: "Complejidad mística y profunda",
+      q2B: "Vainilla, Canela, Ron y Tabaco",
+      q2BSub: "Dulzura oscura y licorosa",
+      q2C: "Bergamota, Hojas de Té y Vetiver",
+      q2CSub: "Claridad botánica e hidro-solar",
+      q3: "3. ¿Cuál es tu proyección deseada?",
+      q3A: "Monstruosa (Beast Mode)",
+      q3ASub: "Llenar la estancia por más de 12 horas",
+      q3B: "Aura Magnética Privada",
+      q3BSub: "Perceptible a un metro de distancia",
+      q3C: "Skin Scent Intimista",
+      q3CSub: "Solo para quienes se acerquen a tu cuello",
+      quizResultTag: "El Oráculo ha Revelado Tu Destino",
+      quizBtnClaim: "Pedir Decant Revelado (5ml)",
+      quizBtnReset: "Reiniciar",
+      historyEyebrow: "Herederos de la Noche",
+      historyTitle: "El Linaje del Aroma",
+      historyDesc: "El perfume no nació como vanidad, sino como puente entre los mortales y los dioses. Viaja a través de nuestras cinco eras tutelares.",
+      reviewsEyebrow: "Testimonios del Cónclave",
+      reviewsTitle: "Ecos de Nuestros Custodios",
+      reviewsRating: "4.98 / 5 de valoración por 480+ devotos",
+      faqEyebrow: "Misterios Desvelados",
+      faqTitle: "Preguntas Frecuentes",
+      couponTitle: "Tu noche dorada empieza aquí",
+      couponDesc: "Ingresa a nuestro cónclave nocturno y recibe un 10% de descuento en tu primer ritual de decants con el salvoconducto sagrado.",
+      couponCodeLabel: "Código Sagrado:",
+      couponPlaceholder: "Ingresa tu correo confidencial",
+      couponBtn: "Consagrarme",
+      cartEmpty: "Tu santuario de compras está vacío.",
+      cartTotalLabel: "Total Consagrado",
+      cartCheckoutBtn: "Finalizar por Concierge WhatsApp",
+      cartSommelierNote: "Atención personalizada con sommelier olfativo",
+      footerDesc: "Santuario nocturno donde la mitología imperial y los ritos olfativos convergen. Custodios de elixires sagrados, extractos puros y decants de arte olfativo intemporal formulados bajo el manto de la noche.",
+      footerRights: "© 2024 NOX AUREA. Todos los derechos reservados. Sanctuarium Olfactorium."
+    },
+    en: {
+      topBanner: "Complimentary armored shipping over $200,000 COP · Bespoke discovery vials in every order",
+      navCollections: "Collections",
+      navDecants: "Decants",
+      navPerfumes: "Perfumes",
+      navAbout: "About Us",
+      navContact: "Contact",
+      heroEyebrow: "Sanctuarium Olfactorium & Rare Decants",
+      heroTitle1: "What you leave in the air,",
+      heroTitle2: "consecrates you for eternity.",
+      heroDesc: "We safeguard monumental extracts and millimeter-precise decants in dark crystal flacons. Discover your olfactory signature through nocturnal mysticism.",
+      heroBtn1: "Discover my scent",
+      heroBtn2: "Explore decants",
+      heroMetric1: "Authentic Guarantee",
+      heroMetric2: "Tasted Decants",
+      heroMetric3: "Stealth Dispatch",
+      trust1Title: "100% Original",
+      trust1Desc: "Traceable niche mother flacons",
+      trust2Title: "Armored Shipping",
+      trust2Desc: "Pressurized anti-shock capsules",
+      trust3Title: "Wax Seal Ritual",
+      trust3Desc: "Ceremonial packaging with golden wax",
+      trust4Title: "Nocturnal Concierge",
+      trust4Desc: "Direct 24/7 sommelier advice",
+      lineageEyebrow: "Primordial Chanting",
+      lineageTitle: "Lineage Collections",
+      lineageDesc: "Olfactory families arranged by tutelary deities. Find your archetype between carnal sensuality, regal sovereignty, or eastern alchemy.",
+      colAphroditeTag: "Feminine Elixirs",
+      colAphroditeDesc: "Bulgarian roses, bourbon vanilla, and forbidden tuberose.",
+      colZeusTag: "Imperial Power",
+      colZeusDesc: "Noble woods, earthy vetiver, cedarwood, and sacred smoke.",
+      colDionysusTag: "Nights & Opulence",
+      colDionysusDesc: "Aged spirits, Havana tobacco, and caramelized plum.",
+      colOasisTag: "Arabian Alchemy",
+      colOasisDesc: "Royal Cambodian oud, mystical resins, and black amber.",
+      colHermesTag: "The Voyager",
+      colHermesDesc: "3ml, 5ml, and 10ml decants in covert travel sleeves.",
+      catEyebrow: "Chamber of Relics",
+      catTitle: "The Olfactory Repertoire",
+      catDesc: "Choose your ceremonial flacon or precision decant fractals with absolute purity.",
+      searchPlaceholder: "Search by note, niche house or deity...",
+      filterAll: "All",
+      filterDecants: "Decants",
+      filterBottles: "Bottles",
+      filterArab: "Arabian",
+      filterNiche: "Niche",
+      filterHer: "For Her",
+      filterHim: "For Him",
+      filterUnisex: "Unisex",
+      trialEyebrow: "Nocturnal Wisdom",
+      trialTitle: "Trial Before Commitment",
+      trialDesc: "85% of luxury fragrances are bought blind and abandoned on vanity tables. Our sterile decanting method lets you experience the elixir on your own skin.",
+      trialStep1Tag: "Phase I · Sterile Laboratory",
+      trialStep1Title: "Vacuum Extraction",
+      trialStep1Desc: "We extract the elixir directly from the master flacon using medical crystal cannulas free of ambient exposure to preserve volatile molecules.",
+      trialStep2Tag: "Phase II · Amber Glass Vial",
+      trialStep2Title: "Italian Atomizer",
+      trialStep2Desc: "Sealed in neutral amber glass flacons with micronized sprayers that project a golden mist without altering juice pH.",
+      trialStep3Tag: "Phase III · Daily Ritual",
+      trialStep3Title: "30 Days of Skin Trial",
+      trialStep3Desc: "5ml yields over 70 sprays. Witness how the composition evolves with your skin chemistry across weather and hours before investing in a full flacon.",
+      oracleTag: "Fragrance Oracle",
+      oracleTitle: "The Olfactory Alchemist",
+      oracleSubtitle: "Answer 3 questions and reveal the sacred elixir consecrated to your aura.",
+      q1: "1. In which scenario do you desire your presence to be immortal?",
+      q1A: "Nocturnal gatherings & intimate soirees",
+      q1ASub: "Seduction, warmth, and mystery",
+      q1B: "Halls of power & executive leadership",
+      q1BSub: "Sovereign authority, imposing trail",
+      q1C: "Daily ceremonial & relaxed refinement",
+      q1CSub: "Distinguished clean botanical freshness",
+      q2: "2. Which accords awaken your ancestral memory?",
+      q2A: "Oud, Amber, Incense & Sacred Resins",
+      q2ASub: "Mystical, deep sacred complexity",
+      q2B: "Vanilla, Cinnamon, Rum & Tobacco",
+      q2BSub: "Dark, opulent boozy sweetness",
+      q2C: "Bergamot, Tea Leaves & Vetiver",
+      q2CSub: "Hydro-solar crystalline botanicals",
+      q3: "3. What is your desired scent projection?",
+      q3A: "Beast Mode (Extravagant)",
+      q3ASub: "Fills the chamber for over 12 hours",
+      q3B: "Private Magnetic Aura",
+      q3BSub: "Perceptible within one meter radius",
+      q3C: "Intimate Skin Scent",
+      q3CSub: "Only for those who draw close to your skin",
+      quizResultTag: "The Oracle has Revealed Your Destiny",
+      quizBtnClaim: "Claim Revealed Decant (5ml)",
+      quizBtnReset: "Restart",
+      historyEyebrow: "Heirs of the Night",
+      historyTitle: "The Lineage of Scent",
+      historyDesc: "Perfume was not created as mere vanity, but as a mystical conduit between mortals and deities across five great historical epochs.",
+      reviewsEyebrow: "Conclave Testimonials",
+      reviewsTitle: "Echoes of Our Keepers",
+      reviewsRating: "4.98 / 5 rating by 480+ devoted connoisseurs",
+      faqEyebrow: "Unveiled Mysteries",
+      faqTitle: "Frequently Asked Questions",
+      couponTitle: "Your Golden Night Begins Here",
+      couponDesc: "Join our secret nocturnal conclave and receive 10% off your initial ritual order with the consecrated voucher.",
+      couponCodeLabel: "Sacred Code:",
+      couponPlaceholder: "Enter your confidential email",
+      couponBtn: "Consecrate Me",
+      cartEmpty: "Your sanctuary shopping cart is empty.",
+      cartTotalLabel: "Consecrated Total",
+      cartCheckoutBtn: "Finalize via WhatsApp Sommelier",
+      cartSommelierNote: "Bespoke assistance with a private olfactory sommelier",
+      footerDesc: "Nocturnal sanctuary where imperial mythos and sensory rites converge. Keepers of rare extracts, pure attars, and timeless decants bottled under midnight veil.",
+      footerRights: "© 2024 NOX AUREA. All rights reserved. Sanctuarium Olfactorium."
+    }
+  };
+
+  let currentLang = 'es';
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('nox_lang', lang);
+
+    const btnES = document.getElementById('langBtnES');
+    const btnEN = document.getElementById('langBtnEN');
+    if (btnES && btnEN) {
+      if (lang === 'en') {
+        btnEN.classList.add('active-lang');
+        btnES.classList.remove('active-lang');
+      } else {
+        btnES.classList.add('active-lang');
+        btnEN.classList.remove('active-lang');
+      }
+    }
+
+    const t = I18N[lang];
+
+    // Top announcement
+    const topBar = document.getElementById('topBarAnnouncement');
+    if (topBar) topBar.textContent = t.topBanner;
+
+    // Navigation
+    const navLinks = document.querySelectorAll('header nav a');
+    if (navLinks.length >= 5) {
+      navLinks[0].textContent = t.navCollections;
+      navLinks[1].textContent = t.navDecants;
+      navLinks[2].textContent = t.navPerfumes;
+      navLinks[3].textContent = t.navAbout;
+      navLinks[4].textContent = t.navContact;
+    }
+
+    // Hero elements
+    const heroEyebrow = document.querySelector('section:nth-of-type(1) .font-label-ritual.text-primary');
+    if (heroEyebrow) heroEyebrow.textContent = t.heroEyebrow;
+
+    const heroH1 = document.querySelector('section:nth-of-type(1) h1');
+    if (heroH1) {
+      heroH1.innerHTML = `${t.heroTitle1} <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed to-secondary italic font-light font-body-lg text-headline-lg lowercase tracking-normal">${t.heroTitle2}</span>`;
+    }
+
+    const heroDesc = document.querySelector('section:nth-of-type(1) p.font-body-lg');
+    if (heroDesc) heroDesc.textContent = t.heroDesc;
+
+    const heroBtns = document.querySelectorAll('section:nth-of-type(1) button span:first-child');
+    if (heroBtns.length >= 2) {
+      heroBtns[0].textContent = t.heroBtn1;
+      heroBtns[1].textContent = t.heroBtn2;
+    }
+
+    const heroMetrics = document.querySelectorAll('section:nth-of-type(1) .grid-cols-3 .font-label-sm');
+    if (heroMetrics.length >= 3) {
+      heroMetrics[0].textContent = t.heroMetric1;
+      heroMetrics[1].textContent = t.heroMetric2;
+      heroMetrics[2].textContent = t.heroMetric3;
+    }
+
+    // Trust Bar
+    const trustCards = document.querySelectorAll('section:nth-of-type(2) .font-headline-sm');
+    const trustDescs = document.querySelectorAll('section:nth-of-type(2) .font-body-sm');
+    if (trustCards.length >= 4) {
+      trustCards[0].textContent = t.trust1Title;
+      trustCards[1].textContent = t.trust2Title;
+      trustCards[2].textContent = t.trust3Title;
+      trustCards[3].textContent = t.trust4Title;
+    }
+    if (trustDescs.length >= 4) {
+      trustDescs[0].textContent = t.trust1Desc;
+      trustDescs[1].textContent = t.trust2Desc;
+      trustDescs[2].textContent = t.trust3Desc;
+      trustDescs[3].textContent = t.trust4Desc;
+    }
+
+    // Lineage Section
+    const linEyebrow = document.querySelector('section:nth-of-type(3) .font-label-ritual');
+    if (linEyebrow) linEyebrow.textContent = t.lineageEyebrow;
+    const linTitle = document.querySelector('section:nth-of-type(3) h2');
+    if (linTitle) linTitle.textContent = t.lineageTitle;
+    const linDesc = document.querySelector('section:nth-of-type(3) p.font-body-md');
+    if (linDesc) linDesc.textContent = t.lineageDesc;
+
+    // Catalogue Search & Filters
+    const sInput = document.getElementById('searchInput');
+    if (sInput) sInput.placeholder = t.searchPlaceholder;
+
+    const chips = document.querySelectorAll('#filterChips .filter-btn');
+    if (chips.length >= 8) {
+      chips[0].textContent = t.filterAll;
+      chips[1].textContent = t.filterDecants;
+      chips[2].textContent = t.filterBottles;
+      chips[3].textContent = t.filterArab;
+      chips[4].textContent = t.filterNiche;
+      chips[5].textContent = t.filterHer;
+      chips[6].textContent = t.filterHim;
+      chips[7].textContent = t.filterUnisex;
+    }
+
+    // Pedagogy Section
+    const trialEye = document.querySelector('section:nth-of-type(5) .font-label-ritual');
+    if (trialEye) trialEye.textContent = t.trialEyebrow;
+    const trialH2 = document.querySelector('section:nth-of-type(5) h2');
+    if (trialH2) trialH2.textContent = t.trialTitle;
+    const trialP = document.querySelector('section:nth-of-type(5) p.font-body-md');
+    if (trialP) trialP.textContent = t.trialDesc;
+
+    const trialSteps = document.querySelectorAll('section:nth-of-type(5) .grid-cols-1 > div');
+    if (trialSteps.length >= 3) {
+      trialSteps[0].querySelector('.font-label-ritual').textContent = t.trialStep1Tag;
+      trialSteps[0].querySelector('h3').textContent = t.trialStep1Title;
+      trialSteps[0].querySelector('p').textContent = t.trialStep1Desc;
+
+      trialSteps[1].querySelector('.font-label-ritual').textContent = t.trialStep2Tag;
+      trialSteps[1].querySelector('h3').textContent = t.trialStep2Title;
+      trialSteps[1].querySelector('p').textContent = t.trialStep2Desc;
+
+      trialSteps[2].querySelector('.font-label-ritual').textContent = t.trialStep3Tag;
+      trialSteps[2].querySelector('h3').textContent = t.trialStep3Title;
+      trialSteps[2].querySelector('p').textContent = t.trialStep3Desc;
+    }
+
+    // Quiz
+    const qTag = document.querySelector('#alquimista .font-label-ritual');
+    if (qTag) qTag.textContent = t.oracleTag;
+    const qTitle = document.querySelector('#alquimista h2');
+    if (qTitle) qTitle.textContent = t.oracleTitle;
+    const qSub = document.querySelector('#alquimista p.font-body-sm');
+    if (qSub) qSub.textContent = t.oracleSubtitle;
+
+    // Quiz Questions & Options
+    const q1H4 = document.querySelector('#quizStep1 h4');
+    if (q1H4) q1H4.textContent = t.q1;
+    const q1Btns = document.querySelectorAll('#quizStep1 button');
+    if (q1Btns.length >= 3) {
+      q1Btns[0].querySelector('.font-body-md').textContent = t.q1A;
+      q1Btns[0].querySelector('.font-body-sm').textContent = t.q1ASub;
+      q1Btns[1].querySelector('.font-body-md').textContent = t.q1B;
+      q1Btns[1].querySelector('.font-body-sm').textContent = t.q1BSub;
+      q1Btns[2].querySelector('.font-body-md').textContent = t.q1C;
+      q1Btns[2].querySelector('.font-body-sm').textContent = t.q1CSub;
+    }
+
+    const q2H4 = document.querySelector('#quizStep2 h4');
+    if (q2H4) q2H4.textContent = t.q2;
+    const q2Btns = document.querySelectorAll('#quizStep2 button');
+    if (q2Btns.length >= 3) {
+      q2Btns[0].querySelector('.font-body-md').textContent = t.q2A;
+      q2Btns[0].querySelector('.font-body-sm').textContent = t.q2ASub;
+      q2Btns[1].querySelector('.font-body-md').textContent = t.q2B;
+      q2Btns[1].querySelector('.font-body-sm').textContent = t.q2BSub;
+      q2Btns[2].querySelector('.font-body-md').textContent = t.q2C;
+      q2Btns[2].querySelector('.font-body-sm').textContent = t.q2CSub;
+    }
+
+    const q3H4 = document.querySelector('#quizStep3 h4');
+    if (q3H4) q3H4.textContent = t.q3;
+    const q3Btns = document.querySelectorAll('#quizStep3 button');
+    if (q3Btns.length >= 3) {
+      q3Btns[0].querySelector('.font-body-md').textContent = t.q3A;
+      q3Btns[0].querySelector('.font-body-sm').textContent = t.q3ASub;
+      q3Btns[1].querySelector('.font-body-md').textContent = t.q3B;
+      q3Btns[1].querySelector('.font-body-sm').textContent = t.q3BSub;
+      q3Btns[2].querySelector('.font-body-md').textContent = t.q3C;
+      q3Btns[2].querySelector('.font-body-sm').textContent = t.q3CSub;
+    }
+
+    // Cart & Coupon
+    const couponH2 = document.querySelector('section:nth-of-type(9) h2');
+    if (couponH2) couponH2.textContent = t.couponTitle;
+    const couponP = document.querySelector('section:nth-of-type(9) p.font-body-lg');
+    if (couponP) couponP.textContent = t.couponDesc;
+    const cLabel = document.querySelector('section:nth-of-type(9) .font-label-ritual.text-outline');
+    if (cLabel) cLabel.textContent = t.couponCodeLabel;
+    const cInput = document.querySelector('section:nth-of-type(9) input');
+    if (cInput) cInput.placeholder = t.couponPlaceholder;
+    const cBtn = document.querySelector('section:nth-of-type(9) button.bg-primary');
+    if (cBtn) cBtn.textContent = t.couponBtn;
+
+    // Re-render product cards with translated labels (Add / Salida / Fondo)
+    if (typeof renderProducts === 'function' && typeof getFilteredProducts === 'function') {
+      renderProducts(getFilteredProducts());
+    }
+    if (typeof renderCart === 'function') {
+      renderCart();
+    }
+  }
+
+  // OVERRIDE renderProducts TO HONOR ENGLISH / SPANISH
+  const originalRenderProducts = window.renderProducts;
+  window.renderProducts = function(items) {
+    const grid = document.getElementById("productGrid");
+    if (!grid) return;
+    grid.innerHTML = "";
+
+    if (items.length === 0) {
+      const emptyText = currentLang === 'en' ? 'No elixirs found matching your sacred criteria.' : 'No se han hallado elixires con esos criterios en el santuario.';
+      grid.innerHTML = `
+        <div class="col-span-full py-16 text-center text-outline">
+          <span class="material-symbols-outlined text-[48px] opacity-40 mb-2">search_off</span>
+          <p class="font-body-md text-body-md">${emptyText}</p>
+        </div>
+      `;
+      return;
+    }
+
+    const addLabel = currentLang === 'en' ? 'Add' : 'Añadir';
+    const topLabel = currentLang === 'en' ? 'Top:' : 'Salida:';
+    const baseLabel = currentLang === 'en' ? 'Base:' : 'Fondo:';
+    const viewRitualLabel = currentLang === 'en' ? 'Ritual View' : 'Vista Ritual';
+
+    items.forEach(p => {
+      const currentSize = selectedSizes[p.id] || "5ml";
+      const currentPrice = p.prices[currentSize];
+      const badgeText = currentLang === 'en' ? translateBadge(p.badge) : p.badge;
+      const scarcityText = currentLang === 'en' ? translateScarcity(p.scarcity) : p.scarcity;
+
+      const card = document.createElement("div");
+      card.className = "flex flex-col bg-surface-container-low rounded p-5 hover:bg-surface-container transition-all group relative";
+      card.innerHTML = `
+        <div class="flex items-center justify-between mb-3">
+          <span class="font-label-ritual text-label-sm uppercase px-2.5 py-1 rounded bg-secondary-container/30 text-secondary tracking-widest">${badgeText}</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            ${scarcityText}
+          </span>
+        </div>
+        <div class="relative h-64 rounded overflow-hidden bg-surface-container-lowest mb-4 cursor-pointer" onclick="openQuickView(${p.id})">
+          <div style="background-image: url('${p.image}')" data-alt="${p.imgAlt}" class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+          <button class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-surface-container/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[14px]">visibility</span> ${viewRitualLabel}
+          </button>
+        </div>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">${p.house}</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface uppercase mt-1 cursor-pointer hover:text-primary transition-colors" onclick="openQuickView(${p.id})">${p.name}</h3>
+        <div class="my-3 py-2 border-t border-surface-container-high/60 flex flex-col gap-1 text-outline font-body-sm text-body-sm">
+          <span><strong class="text-on-surface">${topLabel}</strong> ${p.top}</span>
+          <span class="truncate"><strong class="text-on-surface">${baseLabel}</strong> ${p.base}</span>
+        </div>
+        <div class="flex items-center gap-1.5 mb-4 p-1 rounded bg-surface-container-lowest">
+          ${Object.keys(p.prices).map(size => `
+            <button onclick="changeProductSize(${p.id}, '${size}')" class="flex-1 py-1 rounded text-label-sm font-label-ritual uppercase tracking-wider transition-all ${size === currentSize ? 'bg-primary text-on-primary font-bold' : 'text-outline hover:text-on-surface'}">
+              ${size.replace('Frasco (', '').replace(')', '')}
+            </button>
+          `).join('')}
+        </div>
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-outline uppercase">${currentSize}</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-bold" id="price-${p.id}">${formatCOP(currentPrice)}</span>
+          </div>
+          <button onclick="addToCart(${p.id})" class="px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-ritual text-label-ritual uppercase tracking-wider hover:bg-primary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span>${addLabel}</span>
+          </button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  };
+
+  function translateBadge(badge) {
+    const map = {
+      'Edición Mítica': 'Mythic Edition',
+      'Bestseller': 'Bestseller',
+      'Poder Absoluto': 'Absolute Power',
+      'Afrodita Suprema': 'Aphrodite Supreme',
+      'Alquimia Árabe': 'Arabian Alchemy',
+      'Dionisio': 'Dionysus',
+      'Clásico Imperial': 'Imperial Classic',
+      'Copa de Dioses': 'Chalice of Gods',
+      'Afrodita Prohibida': 'Forbidden Aphrodite',
+      'Zeus Soberano': 'Sovereign Zeus'
+    };
+    return map[badge] || badge;
+  }
+
+  function translateScarcity(scarcity) {
+    if (scarcity.includes('Quedan')) return scarcity.replace('Quedan', 'Only').replace('unidades', 'units left');
+    if (scarcity === 'Alta demanda') return 'High Demand';
+    if (scarcity === 'Últimas piezas') return 'Final Pieces';
+    if (scarcity === 'Disponible') return 'In Sanctuary';
+    return scarcity;
+  }
+
+  // INITIALIZE ON LOAD
+  initTheme();
+  const savedLang = localStorage.getItem('nox_lang') || 'es';
+  if (savedLang !== 'es') {
+    setLanguage(savedLang);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 pt-16 pb-12 mt-20"><div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12"><div class="lg:col-span-2 flex flex-col gap-5"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[28px]">military_tech</span><span class="font-['Cinzel',serif] tracking-[0.24em] text-[18px] font-bold text-primary uppercase">NOX AUREA</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Santuario nocturno donde la mitología imperial y los ritos olfativos convergen. Custodios de elixires sagrados, extractos puros y decants de arte olfativo intemporal formulados bajo el manto de la noche.</p><div class="flex items-center gap-4 pt-2"><a class="inline-flex items-center gap-2 px-4 py-2 rounded-DEFAULT bg-surface-container text-primary font-label-ritual text-label-ritual uppercase hover:bg-surface-container-high transition-colors" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">chat</span>Concierge WhatsApp</a></div></div><div class="flex flex-col gap-4"><h4 class="font-headline-sm text-headline-sm text-primary">Santuario</h4><ul class="flex flex-col gap-2.5 font-label-md text-label-md uppercase"><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Gran Selección</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Decants 2ml, 5ml &amp; 10ml</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Flacones Majestuosos</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Alquimia de Noche</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Membresía Áurea</li></ul></div><div class="flex flex-col gap-4"><h4 class="font-headline-sm text-headline-sm text-primary">Ceremonia</h4><ul class="flex flex-col gap-2.5 font-label-md text-label-md uppercase"><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Ritual de Envío</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Certificado de Autenticidad</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Guía de Notas Olfativas</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Términos Sagrados</li><li class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Privacidad Nocturna</li></ul></div><div class="flex flex-col gap-4"><h4 class="font-headline-sm text-headline-sm text-primary">Epístola Nocturna</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete a las revelaciones olfativas y lanzamientos confidenciales de medianoche.</p><form class="flex flex-col gap-3 mt-1"><div class="relative"><input class="w-full bg-surface-container px-3.5 py-2.5 text-on-surface font-body-sm text-body-sm rounded-DEFAULT border border-outline-variant/50 focus:outline-none focus:border-primary placeholder:text-outline-variant transition-colors" placeholder="Tu correo electrónico" type="email"><button aria-label="Suscribirse" class="absolute right-2 top-1/2 -translate-y-1/2 text-primary hover:text-primary-fixed transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></form><div class="flex items-center gap-3 pt-3"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer text-[20px] transition-colors">public</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer text-[20px] transition-colors">photo_camera</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer text-[20px] transition-colors">mail</span></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 mt-14 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex items-center gap-4 text-outline font-label-sm text-label-sm"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">verified</span>Autenticidad 100% Garantizada</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">lock</span>Pagos Encriptados</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">local_shipping</span>Despacho Sigiloso</span></div><div class="font-label-ritual text-label-ritual text-outline uppercase tracking-widest text-center md:text-right">© 2024 NOX AUREA. Todos los derechos reservados. Sanctuarium Olfactorium.</div></div></footer>
+
+</body></html>
